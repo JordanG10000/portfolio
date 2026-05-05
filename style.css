@@ -1,0 +1,109 @@
+body {
+    color: white;
+    background-color: #1D120B;
+    margin: 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+    & section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 65%;
+
+        & h1 {
+            color: #6DB1BF;
+            font-size: clamp(2.25rem, 3.75rem, 5.25rem);
+            text-shadow: 0 2px 10px rgb(149, 149, 149);
+        }
+
+        & p {
+            font-size: clamp(.75rem, 2rem, 2.75rem);
+            word-spacing: 3px;
+        }
+    }
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    height: 125vh;
+
+    & header {
+        display: flex;
+        justify-content: center;
+        background-color: #E4D5A7;
+        align-items: center;
+        width: 100%;
+        padding: 2.5% 0 2.5%;
+
+
+        & h2 {
+            padding-left: 10%;
+            font-size: 4rem;
+            text-shadow: 0 2px 3px black;
+        }
+    }
+
+    & .links {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 10%;
+
+        & .link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & h3 {
+                font-size: clamp(1rem, 1.5rem, 1.75rem);
+                color: white;
+                text-decoration: underline;
+                margin-top: 7%;
+            }
+
+            &:hover {
+                transform: scale(1.15);
+                text-shadow: 0 4px 10px white;
+                transition: transform ease-in-out .1s;
+            }
+        }
+    }
+}
+
+.resume {
+
+    & a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #6DB1BF;
+        padding: 7.5%;
+
+        & h2 {
+            margin-left: 3%;
+            font-size: clamp(3rem, 4.5rem, 6rem);
+            color: white;
+        }
+
+
+        &:hover {
+            & h2 {
+                transform: scale(1.15);
+                text-decoration: underline;
+                text-shadow: 0 0 7px white;
+                transition: transform ease-in-out .1s;
+            }
+
+        }
+    }
+
+}
